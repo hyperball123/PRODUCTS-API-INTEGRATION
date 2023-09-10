@@ -1,0 +1,24 @@
+.Products-section {
+  display: grid;
+  place-items: center;
+  height: fit-content;
+  font-size: 2rem;
+  background: #fff;
+  color: #000;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+  padding: 4.4rem 6.4rem;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+border: 1px solid rgba(211, 211, 211, 0.265);
+margin: 0 2rem;
+}
+
