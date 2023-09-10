@@ -21,4 +21,11 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 border: 1px solid rgba(211, 211, 211, 0.265);
 margin: 0 2rem;
 }
+@media screen and (max-width: 768px) {
+  .category {
+    padding: 2.4rem 3.4rem;
+    background-color: blue;
+  }
+}
+  
 

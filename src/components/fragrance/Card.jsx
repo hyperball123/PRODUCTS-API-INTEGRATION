@@ -1,6 +1,5 @@
 import React from 'react'
-
-function Fragrance({product}) {
+function Card({product}) {
   return (
     <div className="Fragrance-section">
       <div className="Fragrance box">
@@ -9,6 +8,7 @@ function Fragrance({product}) {
             className="image"
             src={product.thumbnail}
             alt={product.description}
+            width={200}
           />
         </div>
         <div className="Fragrance desc">
@@ -40,4 +40,4 @@ function Fragrance({product}) {
   );
 }
 
-export default Fragrance
+export default Card

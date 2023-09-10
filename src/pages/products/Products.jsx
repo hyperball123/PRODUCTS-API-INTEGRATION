@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
 import Axios from "axios";
-import SmartPhones from "../../components/smartphones/SmartPhones";
-import Laptops from "../../components/laptops/Laptops";
-import Fragrance from "../../components/fragrance/Fragrance";
-import Skincare from "../../components/skincare/Skincare";
-import Groceries from "../../components/groceries/Groceries";
-import Decoration from "../../components/home-decoration/Decoration";
+import Card from "../../components/fragrance/Card";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -51,7 +46,7 @@ function Products() {
         <h2>SmartPhones</h2>
         <div className="category">
           {smartphones.map((product) => (
-            <SmartPhones key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
@@ -59,7 +54,7 @@ function Products() {
         <h2>Laptops</h2>
         <div className="category">
           {laptops.map((product) => (
-            <Laptops key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
@@ -67,7 +62,7 @@ function Products() {
         <h2>Fragrance</h2>
         <div className="category">
           {fragrances.map((product) => (
-            <Fragrance key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
@@ -75,7 +70,7 @@ function Products() {
         <h2>Skincare</h2>
         <div className="category">
           {skincare.map((product) => (
-            <Skincare key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
@@ -83,7 +78,7 @@ function Products() {
         <h2>Groceries</h2>
         <div className="category">
           {groceries.map((product) => (
-            <Groceries key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
@@ -91,7 +86,7 @@ function Products() {
         <h2>Home-Decoration</h2>
         <div className="category">
           {homeDecoration.map((product) => (
-            <Decoration key={product.id} product={product} />
+            <Card key={product.id} product={product} />
           ))}
         </div>
       </div>
